@@ -1,6 +1,6 @@
 # Mastering Switch Statements in Swift
 
-![AppIcon128](Images/AppIcon128.png) This is the starter project code for the video on mastering switch statements in Swift
+![AppIcon128](Images/AppIcon128.png) This is the completed source code for the video on mastering switch statements in Swift
 
 Release Date: January 18. 2026
 
