@@ -18,6 +18,29 @@ import SwiftUI
 
 enum AppTheme: String, CaseIterable {
     case system, light, dark
+    var preferredColorScheme: ColorScheme? {
+        switch self {
+        case .system:
+            nil
+        case .light:
+                .light
+        case .dark:
+                .dark
+        }
+    }
+    
+    var symbolName: String {
+        switch self {
+        case .system:
+            "sunset.fill"
+        case .light:
+            "sun.max.circle.fill"
+        case .dark:
+            "moon"
+        @unknown default:
+            "questionmark.circle"
+        }
+    }
 }
 
 struct ThirdView: View {
@@ -32,10 +55,11 @@ struct ThirdView: View {
             }
             .padding()
             .pickerStyle(.segmented)
-            Image(systemName: "sunset.fill")
+            Image(systemName: appTheme.symbolName)
                 .font(.system(size: 100))
             Spacer()
         }
+        .preferredColorScheme(appTheme.preferredColorScheme)
     }
 }
 
@@ -49,5 +73,13 @@ struct ThirdView: View {
 
 
 #Playground("Enum Switch") {
-    
+    let theme = AppTheme.system
+    switch theme {
+    case .system:
+        print("Use system setting")
+    case .light:
+        print("Set to light")
+    case .dark:
+        print("Set to dark")
+    }
 }
