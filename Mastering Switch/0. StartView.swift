@@ -22,6 +22,7 @@ struct StartView: View {
         NavigationStack {
             viewOption
                 .navigationTitle(viewOption.title)
+                .toolbarTitleDisplayMode(.inlineLarge)
         }
         .toolbar {
             ToolbarItem(placement: .bottomBar) {
