@@ -2,7 +2,9 @@
 
 ![AppIcon128](Images/AppIcon128.png) This is the starter project code for the video on mastering switch statements in Swift
 
-Release Date: January 18. 2026
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=84HoS9W2tpw
+" target="_blank"><img src="http://img.youtube.com/vi/84HoS9W2tpw/0.jpg" 
+alt="Mastering Switch Statements" width="480" height="360" border="1" /></a>
 
 If you want to support my work, you can - </br>
 
